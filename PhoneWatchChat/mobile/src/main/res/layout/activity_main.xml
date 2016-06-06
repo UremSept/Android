@@ -5,21 +5,35 @@
     android:layout_height="match_parent"
     tools:context="com.example.hj.phonewatchchat.MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorRed"
-        android:text="未连接"
-        android:gravity="center"
-        android:id="@+id/linkFlagTextVeiw"
-        />
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorRed"
+            android:text="未连接"
+            android:gravity="center"
+            android:id="@+id/linkFlagTextVeiw"
+            />
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="自动回复"
+            android:id="@+id/autoSendSwitch"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/showChatListView"
         android:layout_above="@+id/inputLinear"
-        android:layout_below="@+id/linkFlagTextVeiw"
+        android:layout_below="@+id/linearLayout"
         >
     </ListView>
     <LinearLayout

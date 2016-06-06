@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private Button chatSendButton;
     private ListView showChatListView;
     private ChatAdapter chatAdapter;
+    private Switch aSwitch;
     private MainApplication mainApp;
     private List<Type> mList;
     private TuringApiManager m;
@@ -58,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         //mobvoiApiClient = mainApp.getMobvoiApiClient();
         linkChatListener();
+        aSwitch = (Switch) findViewById(R.id.autoSendSwitch);
+        aSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m.requestTuringAPI("你好");
+            }
+        });
         linkFlagTextVeiw = (TextView) findViewById(R.id.linkFlagTextVeiw);
         linkStaus();
         linkFlagTextVeiw.setOnClickListener(new View.OnClickListener() {
@@ -135,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 if (ss.equals("testData")) {
 
                 } else {
-                    if (mFlag) {
+                    if (mFlag&&aSwitch.isChecked()) {
                         m.requestTuringAPI(ss);
                     }
                     mList.add(new WearType(R.mipmap.wear, ss));
@@ -161,10 +170,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onError(ErrorMessage errorMessage) {
                         Toast.makeText(MainActivity.this, "网络请求失败", Toast.LENGTH_SHORT).show();
                     }
-
                     @Override
                     public void onSuccess(RequestResult requestResult) {
-                        sendToWearMessage(requestResult.toString());
+                        //sendToWearMessage(requestResult.toString());
+                        Log.i("TestData",requestResult.toString());
                     }
                 });
             }
