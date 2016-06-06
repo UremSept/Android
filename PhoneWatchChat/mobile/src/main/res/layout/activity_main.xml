@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hj.phonewatchchat.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorRed"
+        android:text="未连接"
+        android:gravity="center"
+        android:id="@+id/linkFlagTextVeiw"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/showChatListView"
+        android:layout_above="@+id/inputLinear"
+        android:layout_below="@+id/linkFlagTextVeiw"
+        >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/inputLinear"
+
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:id="@+id/chatInputEditView"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:id="@+id/chatSendButton"
+            android:text="发送"
+            />
+    </LinearLayout>
+</RelativeLayout>

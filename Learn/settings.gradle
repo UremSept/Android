@@ -1,0 +1,2 @@
+include ':vitamio', ':bluevideoplayer'
+include ':javaapkcom'

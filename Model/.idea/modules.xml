@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DoubleListViewLinkage/DoubleListViewLinkage.iml" filepath="$PROJECT_DIR$/DoubleListViewLinkage/DoubleListViewLinkage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Model.iml" filepath="$PROJECT_DIR$/Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VoiceInputDemo/VoiceInputDemo.iml" filepath="$PROJECT_DIR$/VoiceInputDemo/VoiceInputDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android5.0/android5.0.iml" filepath="$PROJECT_DIR$/android5.0/android5.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android5_0/android5_0.iml" filepath="$PROJECT_DIR$/android5_0/android5_0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/happylife-master/happylife-master.iml" filepath="$PROJECT_DIR$/happylife-master/happylife-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_example/social_sdk_example.iml" filepath="$PROJECT_DIR$/social_sdk_example/social_sdk_example.iml" />
+    </modules>
+  </component>
+</project>

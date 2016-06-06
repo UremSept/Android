@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Learn.iml" filepath="$PROJECT_DIR$/Learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluevideoplayer/bluevideoplayer.iml" filepath="$PROJECT_DIR$/bluevideoplayer/bluevideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaapkcom/javaapkcom.iml" filepath="$PROJECT_DIR$/javaapkcom/javaapkcom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" />
+    </modules>
+  </component>
+</project>

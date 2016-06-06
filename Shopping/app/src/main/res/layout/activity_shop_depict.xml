@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edu.lzjtu.shopping.activity.ShopDepict">
+
+    <ImageView
+        android:id="@+id/shopdepictimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/shopdepictname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/shopdepictsay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/shopdepictprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/shopdepictadd"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/shopdepictcount"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            />
+
+        <Button
+            android:id="@+id/shopdepictsub"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/shopdepictaddtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入购物车" />
+    </LinearLayout>
+</LinearLayout>

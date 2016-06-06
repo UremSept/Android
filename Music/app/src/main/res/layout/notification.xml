@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_main_layout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_timelayout"
+        android:layout_above="@+id/notification_seekBarMusic"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/music_time">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification_music_name"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorPurple"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_music_time"
+            android:text="00:00"
+            android:layout_toLeftOf="@+id/notification_time_"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/notification_time_"
+            android:layout_toLeftOf="@+id/notification_paly_time"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_paly_time"
+            android:text="00:00"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:id="@+id/notification_seekBarMusic"
+        android:layout_above="@+id/notification_control_layout"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_control_layout"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/notification_last_song"
+
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification_play_type"
+                android:background="@mipmap/one"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_last_song"
+            android:background="@drawable/imagebutton_previous_music"
+            android:layout_toLeftOf="@+id/notification_start_stop"
+            android:layout_centerVertical="true"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_start_stop"
+            android:layout_centerInParent="true"
+            android:background="@drawable/imagebutton_music_start"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_next_song"
+            android:background="@drawable/imagebutton_next_music"
+            android:layout_toRightOf="@+id/notification_start_stop"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

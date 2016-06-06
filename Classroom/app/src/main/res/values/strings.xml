@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Learn</string>
+    <string name="hobby1">篮球</string>
+    <string name="hobby2">排球</string>
+    <string name="edoprompt">请选择您的学历</string>
+</resources>

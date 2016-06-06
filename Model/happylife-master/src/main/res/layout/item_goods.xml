@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3px"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/goodsPicImageView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/goodsPicImageView"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/goodsInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_margin="3dp"
+            android:lines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_smaller"
+            tools:text="毛衣毛裤秋衣秋裤情趣用品专卖店充气娃娃直销" />
+
+        <TextView
+            android:id="@+id/goodsPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goodsInfoTextView"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:text="￥99"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_smaller" />
+
+        <TextView
+            android:id="@+id/goodsOldPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/goodsInfoTextView"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:text="￥99"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_smaller" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/watchViewStubLayout"
+    android:background="@color/colorHui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorRed"
+            android:text="未连接"
+            android:gravity="center"
+            android:id="@+id/linkFlagTextVeiw"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/showChatListView"
+            android:layout_above="@+id/wear_input_button"
+            android:layout_below="@+id/linkFlagTextVeiw"
+            >
+        </ListView>
+        <ImageButton
+            android:id="@+id/wear_input_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@mipmap/ppp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="开启语音识别" />
+</RelativeLayout>
+

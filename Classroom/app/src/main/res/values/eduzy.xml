@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eduzy">
+        <item>信息工程</item>
+        <item>通  信</item>
+        <item>电子信息</item>
+        <item>机械电子</item>
+    </string-array>
+</resources>

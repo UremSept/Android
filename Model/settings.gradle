@@ -1,0 +1,2 @@
+include ':happylife-master', ':android5_0', ':DoubleListViewLinkage', ':android5.0', ':VoiceInputDemo'
+include ':social_sdk_example'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.edu.lzjtu.weixin.MainActivity">
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/TabPager"
+    android:layout_above="@+id/TablayoutFragment"
+    ></android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TablayoutFragment"
+        android:layout_alignParentBottom="true"
+        tab:tabIndicatorHeight="0dp"
+        >
+    </android.support.design.widget.TabLayout>
+</RelativeLayout>

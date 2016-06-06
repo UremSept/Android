@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.class4.learn.exam4_1">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myedit_1"
+        android:textSize="20dp"
+        android:phoneNumber="true"
+        android:selectAllOnFocus="true"
+        android:text="请输入您的手机号码"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示您的手机号码"
+        android:id="@+id/mybut_1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/myedit_1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mytext_1"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mybut_1"
+        />
+</RelativeLayout>
